@@ -973,11 +973,11 @@
 <distributionManagement>
     <repository>
         <id>nexus-releases</id>
-        <url>http://98.83.135.126:8081/repository/maven-releases/</url>
+        <url>http://98.83.135.126:8081/repository/sample-webapp-releases/</url>
     </repository>
     <snapshotRepository>
         <id>nexus-snapshots</id>
-        <url>http://98.83.135.126:8081/repository/maven-snapshots/</url>
+        <url>http://98.83.135.126:8081/repository/sample-webapp-snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
 </project>
