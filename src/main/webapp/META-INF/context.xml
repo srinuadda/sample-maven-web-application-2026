@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context path="/sample-webapp" docBase="./sample-webapp" debug="1" reloadable="false">
+
+    <Environment name="logActiveFileOutput" value="true" type="java.lang.String" override="false" />
+    <Environment name="logName" value="/home/ubuntu/projects/sample-webapp/target/sample-webapp.log" type="java.lang.String" override="false" />
+    <Environment name="logFileRotatePattern" value="/home/ubuntu/projects/sample-webapp/target/sample-webapp_logs/sample-webapp-%i.log.gz" type="java.lang.String" override="false" />
+    <Environment name="logLevel" value="INFO" type="java.lang.String" override="false" />
+    <Environment name="logFileSize" value="10485760" type="java.lang.String" override="false" />
+    <Environment name="logFilesCount" value="10" type="java.lang.String" override="false" />
+
+    <Environment name="configVersion" value="production" type="java.lang.String" override="false" />
+
+    <Environment name="applicationBaseURL" value="https://localhost:8080/sample-webapp/" type="java.lang.String" override="false" />
+    <Environment name="resourceRootURL" value="/sample-webapp/resources/" type="java.lang.String" override="false" />
+    <Environment name="protectedResourceRootURL" value="/sample-webapp/protected/" type="java.lang.String" override="false" />
+
+    <Environment name="resourceDiskRootFolder" value="/home/ubuntu/projects/sample-webapp/src/main/webapp/resources" type="java.lang.String" override="false" />
+    <Environment name="protectedResourceDiskRootFolder" value="/home/ubuntu/projects/sample-webapp/src/main/webapp/protected" type="java.lang.String" override="false" />
+
+    <Environment name="indexDiskRootFolder" value="/home/ubuntu/projects/sample-webapp/target/temp/indexdir" type="java.lang.String" override="false" />
+    
+    <Environment name="portDataSourceClassName" value="org.apache.derby.jdbc.EmbeddedDriver" type="java.lang.String" override="false" />
+    <Environment name="servDataSourceClassName" value="org.apache.derby.jdbc.EmbeddedDriver" type="java.lang.String" override="false" />
+	
+    <Resource name="jdbc/portDataSource" auth="Container"
+              type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+              maxActive="8" maxIdle="4"
+              username="agile" password="agile"
+              url="jdbc:derby:/home/ubuntu/projects/sample-webapp/target/derby/production/sample-webappPort;create=true" />
+
+    <Resource name="jdbc/servDataSource" auth="Container"
+              type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+              maxActive="8" maxIdle="4"
+              username="agile" password="agile"
+              url="jdbc:derby:/home/ubuntu/projects/sample-webapp/target/derby/production/sample-webappServ;create=true" />
+
+</Context>
