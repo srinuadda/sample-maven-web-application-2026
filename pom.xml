@@ -974,12 +974,12 @@
     <repository>
         <id>nexus-releases</id>
         <name>Nexus Release Repository</name>
-        <url>http://13.222.160.54:8081/repository/maven-webapp-releases/</url>
+        <url>http://35.170.243.218:8081/repository/maven-webapp-releases/</url>
     </repository>
     <snapshotRepository>
         <id>nexus-snapshots</id>
         <name>Nexus Snapshot Repository</name>
-        <url>http://13.222.160.54:8081/repository/maven-webapp-snapshots/</url>
+        <url>http://35.170.243.218:8081/repository/maven-webapp-snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
 </project>
